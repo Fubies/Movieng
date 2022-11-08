@@ -1,3 +1,5 @@
+use team01;
+
 drop table bad;
 drop table good;
 drop table comment;
