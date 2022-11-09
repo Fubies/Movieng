@@ -1,3 +1,35 @@
+<?php
+
+$mysqli = mysqli_connect("localhost", "team01", "team01", "team01", '3306');
+
+if(mysqli_connect_errno()) {
+    printf("Connected failed : %s\n",mysqli_connect_error());
+    exit();
+}
+else {
+    $sql = "select * from movie order by like_count, title";
+    $res = mysqli_query($mysqli, $sql);
+
+    // if($res) {
+    //     $rank = 0;
+    //     while($newArray = mysqli_fetch_array($res, MYSQLI_ASSOC)) {
+    //         $rank++;
+    //         $id = $newArray['movie_id'];
+    //         $title = $newArray['title'];
+            
+    //         $like_count = $newArray['like_count'];
+    //         // echo '<td class="like-container"><button type="button" class="btn-like" data-article-id="'.$id.'">'
+    //         //             .'<span class="heart-shape">♡</span> <span class="like-count">'.$like_count.'</span></button></td>';
+
+    //     }
+    // } else {
+    //     printf("결과 불러오는 데에 실패 : %s\n", mysqli_error($mysqli));
+    // }
+    // mysqli_free_result($res);
+    // mysqli_close($mysqli);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="ko">
   <head>
@@ -54,23 +86,21 @@
           <div class="movie_rank_title_container"><span class="movie_rank_title">영화 목록</span></div>
           <div class="movie_list_container">
             <div class="movie_container">
-              <span class="movie_rank">1</span>
-              <span class="movie_title">영화 제목</span>
-              <button class="movie_like_btn">좋아요<span class="movie_like_cnt">07</span></button>
-              <button class="movie_like_btn">싫어요<span class="movie_like_cnt">05</span></button>
+                <?php if($res) {
+                            $rank = 0;
+                            while($newArray = mysqli_fetch_array($res, MYSQLI_ASSOC)) { ?>
+                <span class="movie_rank"><?php $rank++; echo $rank;?></span>
+                <span class="movie_title"><?php $title = $newArray['title']; echo $title;?></span>
+                <button class="movie_like_btn">좋아요<?php $like_count = $newArray['like_count'];?><span class="movie_like_cnt"><?php echo $like_count?></span></button>
+                <button class="movie_dislike_btn">싫어요<?php $dislike_count = $newArray['dislike_count'];?><span class="movie_like_cnt"><?php echo $dislike_count?></span></button></br>
+                <?php }
+                    mysqli_free_result($res);
+                } else {
+                    printf("결과 불러오는 데에 실패 : %s\n", mysqli_error($mysqli));
+                }?>
+
             </div>
-            <div class="movie_container">
-              <span class="movie_rank">2</span>
-              <span class="movie_title">영화 제목</span>
-              <span class="movie_like">좋아요</span><span class="movie_like_cnt">07</span>
-              <span class="movie_like">싫어요</span><span class="movie_like_cnt">05</span>
-            </div>
-            <div class="movie_container">
-              <span class="movie_rank">3</span>
-              <span class="movie_title">영화 제목</span>
-              <span class="movie_like">좋아요</span><span class="movie_like_cnt">07</span>
-              <span class="movie_like">싫어요</span><span class="movie_like_cnt">05</span>
-            </div>
+            
           </div>
         </div>   
       </div>
