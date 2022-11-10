@@ -51,7 +51,7 @@ body {
 }
 
 .home_menu_container {
-  width: 20rem;
+  width: 25rem;
   height: 30rem;
   margin: 0 auto;
   background-color: #fff;
@@ -59,6 +59,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .profile_content {
@@ -103,3 +104,27 @@ body {
 /*.title_txt:hover {
   color: #cbd1fd;
 }*/
+
+.menu_movie_list {
+  display: flex;
+  text-align: start;
+}
+
+.menu_movie_upperWrap {
+  width: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+hr {
+  width: 18rem;
+}
+
+table {
+  width: 18rem;
+}
+
+.menu_content {
+  width: 10rem;
+}
