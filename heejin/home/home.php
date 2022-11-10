@@ -54,7 +54,7 @@ else {
         <div class="movies_home">
             <div class="menu_movie_upperWrap">
                 <h2 class="menu_movie_title">최신 영화 리스트</h2>
-                <a class="menu_movie_href" href="../../movie/list.php">보러가기</a>
+                <a class="menu_movie_href" href="../../movie/list.php">더보기</a>
             </div>
             <hr />
             <div class="menu_movie_list">
@@ -80,7 +80,7 @@ else {
         <div class="festivals_home">
                 <div class="menu_movie_upperWrap">
                     <h2 class="menu_movie_title">국내 영화제 리스트</h2>
-                    <a class="menu_movie_href" href="">보러가기</a>
+                    <a class="menu_movie_href" href="">더보기</a>
                 </div>
                 <hr />
                 <div class="menu_movie_list">
