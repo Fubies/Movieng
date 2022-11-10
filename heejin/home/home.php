@@ -30,7 +30,7 @@ session_start();
         ?>
     </div>
     <div class="home_title_container">
-        <div class="home_content">영화 위한 종합 영화 커뮤니티</div>
+        <div class="home_content">영화인들을 위한 종합 영화 커뮤니티</div>
         <div class="home_title"><a class="title_txt" href="">MOVIENG</a></div>
         <div class="home_content">영화 리뷰 | 영화제 동행 모집</div>
     </div>
