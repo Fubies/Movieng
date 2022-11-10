@@ -7,7 +7,7 @@ if(mysqli_connect_errno()) {
     exit();
 }
 else {
-    $sql = "select * from movie order by like_count, title";
+    $sql = "select * from movie order by like_count desc, title";
     $res = mysqli_query($mysqli, $sql);
 
     // if($res) {
@@ -39,6 +39,7 @@ else {
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
+
   <body>
       <div class="header_container">
         <header>
@@ -91,8 +92,8 @@ else {
                             while($newArray = mysqli_fetch_array($res, MYSQLI_ASSOC)) { ?>
                 <span class="movie_rank"><?php $rank++; echo $rank;?></span>
                 <span class="movie_title"><?php $title = $newArray['title']; echo $title;?></span>
-                <button class="movie_like_btn">좋아요<?php $like_count = $newArray['like_count'];?><span class="movie_like_cnt"><?php echo $like_count?></span></button>
-                <button class="movie_dislike_btn">싫어요<?php $dislike_count = $newArray['dislike_count'];?><span class="movie_like_cnt"><?php echo $dislike_count?></span></button></br>
+                <button class="movie_like_btn" onclick="window.location.href='./like.php?movie=<?=$newArray['movie_id']?>'">좋아요<?php $like_count = $newArray['like_count'];?></a><span class="movie_like_cnt"><?php echo $like_count?></span></button>
+                <button class="movie_dislike_btn" onclick="window.location.href='./dislike.php?movie=<?=$newArray['movie_id']?>'">싫어요<?php $dislike_count = $newArray['dislike_count'];?><span class="movie_like_cnt"><?php echo $dislike_count?></span></button></br>
                 <?php }
                     mysqli_free_result($res);
                 } else {
@@ -105,4 +106,5 @@ else {
         </div>   
       </div>
   </body>
+
 </html>

@@ -139,3 +139,13 @@ header ul > li {
 	background: rgba(255, 255, 255, 0.6);
 	border-radius: 0.6rem;
 }
+
+.movie_like_btn {
+	border: none;
+	background-color: inherit;
+}
+
+.movie_dislike_btn {
+	border: none;
+	background-color: inherit;
+}
