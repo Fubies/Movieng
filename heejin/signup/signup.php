@@ -17,7 +17,7 @@
 
      $biosettingsql = "
      INSERT INTO profile
-     (user_id,bio) VALUES('{$row['user_id']}','반갑습니다.')";
+     (user_id,bio) VALUES('{$row['user_id']}','Hello.')";
      $bioresult = mysqli_query($mysqli, $biosettingsql);
      
      if ($bioresult === false) {
