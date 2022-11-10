@@ -107,6 +107,7 @@ header ul > li {
 
 .content_genre_container {
 	width: 80%;
+	max-width: 2400px;
 	margin: auto;
 	padding: 1rem;
 	background: rgba(255, 255, 255, 0.6);
@@ -130,11 +131,19 @@ header ul > li {
 
 .movie_rank_container {
 	width: 100%;
+	max-width : 3000px;
+	margin: auto;
+	
 }
 
-.movie_list_container {
-	width: 50%;
-	margin: auto;
+.movie_rank {
+	font-size: 1.5em;
+}
+.movie_container {
+	width: 15%;
+	height : 100px;
+	display: inline-block;
+	margin: 1rem;
 	padding: 1rem;
 	background: rgba(255, 255, 255, 0.6);
 	border-radius: 0.6rem;

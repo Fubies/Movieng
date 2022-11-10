@@ -85,24 +85,24 @@ else {
           </div>
         <div class="movie_rank_container">
           <div class="movie_rank_title_container"><span class="movie_rank_title">영화 목록</span></div>
-          <div class="movie_list_container">
-            <div class="movie_container">
-                <?php if($res) {
+            <?php if($res) {
                             $rank = 0;
                             while($newArray = mysqli_fetch_array($res, MYSQLI_ASSOC)) { ?>
-                <span class="movie_rank"><?php $rank++; echo $rank;?></span>
-                <span class="movie_title"><?php $title = $newArray['title']; echo $title;?></span>
-                <button class="movie_like_btn" onclick="window.location.href='./like.php?movie=<?=$newArray['movie_id']?>'">좋아요<?php $like_count = $newArray['like_count'];?></a><span class="movie_like_cnt"><?php echo $like_count?></span></button>
-                <button class="movie_dislike_btn" onclick="window.location.href='./dislike.php?movie=<?=$newArray['movie_id']?>'">싫어요<?php $dislike_count = $newArray['dislike_count'];?><span class="movie_like_cnt"><?php echo $dislike_count?></span></button></br>
-                <?php }
+              <div class="movie_container">
+                  
+                  <span class="movie_rank"><?php $rank++; echo $rank;?></span></br></br>
+                  <span class="movie_title"><?php $title = $newArray['title']; echo $title;?></span></br>
+                  <button class="movie_like_btn" onclick="window.location.href='./like.php?movie=<?=$newArray['movie_id']?>'">좋아요<?php $like_count = $newArray['like_count'];?></a><span class="movie_like_cnt"><?php echo $like_count?></span></button>
+                  <button class="movie_dislike_btn" onclick="window.location.href='./dislike.php?movie=<?=$newArray['movie_id']?>'">싫어요<?php $dislike_count = $newArray['dislike_count'];?><span class="movie_like_cnt"><?php echo $dislike_count?></span></button></br>
+                  
+              </div>
+           
+            <?php }
                     mysqli_free_result($res);
                 } else {
                     printf("결과 불러오는 데에 실패 : %s\n", mysqli_error($mysqli));
                 }?>
 
-            </div>
-            
-          </div>
         </div>   
       </div>
   </body>
