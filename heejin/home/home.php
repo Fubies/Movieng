@@ -1,5 +1,17 @@
 <?php
 session_start();
+
+$mysqli = mysqli_connect("localhost", "team01", "team01", "team01", "3307");
+
+if(mysqli_connect_errno()) {
+    printf("Connected failed : %s\n",mysqli_connect_error());
+    exit();
+}
+else {
+    //$sql = "select released_date, title from movie order by released_date desc limit 5";
+    $sql = "select released_date, title, rank() over (order by released_date desc) as 'rank' from movie limit 5";
+    $res = mysqli_query($mysqli, $sql);
+}
 ?>
 
 <!DOCTYPE html>
@@ -35,6 +47,31 @@ session_start();
         <div class="home_content">영화 리뷰 | 영화제 동행 모집</div>
     </div>
     <div class="home_menu_container">
+        <div class="menu_movie_upperWrap">
+            <h2 class="menu_movie_title">최신 영화 리스트</h2>
+            <a class="menu_movie_href" href="../../movie/list.php">보러가기</a>
+        </div>
+        <hr />
+        <div class=menu_movie_list>
+            <table>
+                <tr>
+                    <td><h4>제목</h4></td>
+                    <td><h4>개봉년도</h4></td>
+                </tr>
+        <?php if($res) {
+                while($newArray = mysqli_fetch_array($res, MYSQLI_ASSOC)) { ?>
+                <tr>
+                    <td><div class="menu_content"><?php $title = $newArray['title']; echo $title;?></div></td>
+                    <td><div><?php $date = $newArray['released_date']; echo $date;?></div></td>
+                </tr>
+                <?php }
+                    mysqli_free_result($res);
+                } else {
+                    printf("결과 불러오는 데에 실패 : %s\n", mysqli_error($mysqli));
+                }?>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
