@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 $mysqli = mysqli_connect("localhost", "team01", "team01", "team01", "3306");
 
 if(mysqli_connect_errno()) {
@@ -33,7 +33,7 @@ else {
           <div class="navigator">
             <nav>
               <ul>
-                  <li><a href="">영화 살펴보기</a></li>
+                  <li><a href="./list.php">영화 살펴보기</a></li>
                   <li><a href="">영화제 살펴보기</a></li>
               </ul>
           </nav>
@@ -41,14 +41,14 @@ else {
           <h2>MOVIENG</h2>
           <div class="profile">
             <nav>
-              <a href="">프로필</a>
+              <a href="../heejin/mypage/mypage.php">프로필</a>
             </nav>
           </div>
         </header>
       </div>
       <div class="content">
         <div class="genre_like_container">
-          <div class="title_genre_container"><span class="title_genre">장르별 좋아요 수 TOP3</span></div>
+          <div class="title_genre_container"><span class="title_genre">국가별 좋아요 수 TOP3</span></div>
           <?php if($res2) {
             $flag = true;
             while($flag) { ?>
@@ -62,8 +62,8 @@ else {
                   <?php 
                   if($newArray['title'] == 'ALL MOVIE') break;
                 } ?>
-              </div>
-              <?php if($newArray == null) break;
+              </div><br>
+              <?php if($newArray['nation'] == 'ALL NATION') break;
               }
             } else {
               printf("결과 불러오는 데에 실패 : %s\n", mysqli_error($mysqli));
@@ -75,8 +75,7 @@ else {
             <?php if($res) {
                             $rank = 0;
                             while($newArray = mysqli_fetch_array($res, MYSQLI_ASSOC)) { ?>
-              <div class="movie_container">
-                  
+              <div class="movie_container" onclick="location.href='./detail.php?movie=<?php $link = $newArray['movie_id']; echo $link ?>';">
                   <span class="movie_rank"><?php $rank++; echo $rank;?></span></br></br>
                   <span class="movie_title"><?php $title = $newArray['title']; echo $title;?></span></br>
                   <button class="movie_like_btn" onclick="window.location.href='./like.php?movie=<?=$newArray['movie_id']?>'">좋아요<?php $like_count = $newArray['like_count'];?></a><span class="movie_like_cnt"><?php echo $like_count?></span></button>
