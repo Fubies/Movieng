@@ -106,19 +106,19 @@ header ul > li {
 }
 
 .content_genre_container {
-	width: 80%;
-	max-width: 2400px;
+  width: 50%;
 	margin: auto;
 	padding: 1rem;
 	background: rgba(255, 255, 255, 0.6);
 	border-radius: 0.6rem;
 	display: flex;
+  flex-direction: row;
 	justify-content: space-around;
 }
 
 .rank_container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .rank_title {

@@ -1,6 +1,6 @@
 <?php
 
-$mysqli = mysqli_connect("localhost", "team01", "team01", "team01", "3307");
+$mysqli = mysqli_connect("localhost", "team01", "team01", "team01", "3306");
 
 if(mysqli_connect_errno()) {
     printf("Connected failed : %s\n",mysqli_connect_error());
@@ -10,23 +10,10 @@ else {
     $sql = "select * from movie order by like_count desc, title";
     $res = mysqli_query($mysqli, $sql);
 
-    // if($res) {
-    //     $rank = 0;
-    //     while($newArray = mysqli_fetch_array($res, MYSQLI_ASSOC)) {
-    //         $rank++;
-    //         $id = $newArray['movie_id'];
-    //         $title = $newArray['title'];
-            
-    //         $like_count = $newArray['like_count'];
-    //         // echo '<td class="like-container"><button type="button" class="btn-like" data-article-id="'.$id.'">'
-    //         //             .'<span class="heart-shape">♡</span> <span class="like-count">'.$like_count.'</span></button></td>';
-
-    //     }
-    // } else {
-    //     printf("결과 불러오는 데에 실패 : %s\n", mysqli_error($mysqli));
-    // }
-    // mysqli_free_result($res);
-    // mysqli_close($mysqli);
+    $sql2 = "SELECT 
+    COALESCE(m.nation, 'ALL NATION') AS nation, COALESCE(m.title, 'ALL MOVIE') AS title, COUNT(m.title) like_count
+    FROM movie m , good g WHERE m.movie_id = g.movie_id GROUP BY m.nation, m.title WITH ROLLUP";
+    $res2 = mysqli_query($mysqli, $sql2);
 }
 ?>
 
@@ -61,28 +48,28 @@ else {
       </div>
       <div class="content">
         <div class="genre_like_container">
-            <div class="title_genre_container"><span class="title_genre">장르별 좋아요 수 TOP3</span></div>
-            <div class="content_genre_container">
-              <div class="rank_container">
-                <span class="rank_title">[스릴러 좋아요 총합] 전체 - 39</span>
-                <span class="rank">[스릴러] 2021년 - 20</span>
-                <span class="rank">[스릴러] 2022년 - 12</span>
-                <span class="rank">[스릴러] 2022년 - 07</span>
+          <div class="title_genre_container"><span class="title_genre">장르별 좋아요 수 TOP3</span></div>
+          <?php if($res2) {
+            $flag = true;
+            while($flag) { ?>
+              <div class="content_genre_container">
+                <?php while($newArray = mysqli_fetch_array($res2, MYSQLI_ASSOC)) { ?>
+                  <div class="rank_container">
+                    <span class="nation"><?php $nation = $newArray['nation']; echo $nation;?></span>
+                    <span class="movie_title"><?php $title = $newArray['title']; echo $title;?></span>
+                    <span class="like_count"><?php $count = $newArray['like_count']; echo $count;?></span>
+                  </div>
+                  <?php 
+                  if($newArray['title'] == 'ALL MOVIE') break;
+                } ?>
               </div>
-              <div class="rank_container">
-                <span class="rank_title">[코미디 좋아요 총합] 전체 - 39</span>
-                <span class="rank">[코미디] 2021년 - 20</span>
-                <span class="rank">[코미디] 2022년 - 12</span>
-                <span class="rank">[코미디] 2022년 - 07</span>
-              </div>
-              <div class="rank_container">
-                <span class="rank_title">[로맨스 좋아요 총합] 전체 - 39</span>
-                <span class="rank">[로맨스] 2021년 - 20</span>
-                <span class="rank">[로맨스] 2022년 - 12</span>
-                <span class="rank">[로맨스]] 2022년 - 07</span>
-              </div>
-            </div>
-          </div>
+              <?php if($newArray == null) break;
+              }
+            } else {
+              printf("결과 불러오는 데에 실패 : %s\n", mysqli_error($mysqli));
+          }?>
+        </div>
+        
         <div class="movie_rank_container">
           <div class="movie_rank_title_container"><span class="movie_rank_title">영화 목록</span></div>
             <?php if($res) {
@@ -106,5 +93,4 @@ else {
         </div>   
       </div>
   </body>
-
 </html>
