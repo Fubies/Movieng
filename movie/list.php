@@ -21,6 +21,7 @@ else {
 <html lang="ko">
   <head>
       <link rel="stylesheet" href="./list.css" />
+      <link rel="stylesheet" href="./base.css" />
       <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">

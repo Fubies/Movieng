@@ -21,6 +21,7 @@ else {
 <html lang="ko">
   <head>
       <link rel="stylesheet" href="./detail.css" />
+      <link rel="stylesheet" href="./base.css" />
       <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -47,7 +48,7 @@ else {
       </div>
       <div class="content">
         <div class="movie_detail_container">
-            <div class="title_container"><span class="title"><?php echo $newArray['title'] ?></span></div>
+            <div class="title_container"><span class="title"><h2><?php echo $newArray['title'] ?></h2></span></div>
             <div class="content_container">
               <div class ="description_container">
                 <div class="description">
@@ -67,7 +68,7 @@ else {
               </div>
               <br>
               <div class="review_list_container">
-                <div class="review_title"> <a href="./review/write.php">리뷰 작성하기</a></div>
+                <div class="review_title"> <a href="./review/write.html?movie=<?php echo $id ?>">리뷰 작성하기</a></div>
                 <?php if($res) {
                   while($newArray = mysqli_fetch_array($res2, MYSQLI_ASSOC)) { ?>
                     <div class="review_container">
@@ -90,5 +91,4 @@ else {
           </div>
       </div>
   </body>
-  <script src="detail.js"></script>
 </html>
