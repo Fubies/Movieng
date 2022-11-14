@@ -12,8 +12,9 @@ else {
 
     $sql2 = "SELECT 
     COALESCE(m.nation, 'ALL NATION') AS nation, COALESCE(m.title, 'ALL MOVIE') AS title, COUNT(m.title) like_count
-    FROM movie m , good g WHERE m.movie_id = g.movie_id GROUP BY m.nation, m.title WITH ROLLUP";
+    FROM movie m , good g WHERE m.movie_id = g.movie_id AND nation IN ('한국', '일본', '미국') GROUP BY m.nation DESC, m.title WITH ROLLUP";
     $res2 = mysqli_query($mysqli, $sql2);
+
 }
 ?>
 
@@ -39,7 +40,7 @@ else {
               </ul>
           </nav>
           </div>
-          <h2>MOVIENG</h2>
+          <div class="logo" onclick="location.href='../heejin/home/home.php';"><h2>MOVIENG</h2></div>
           <div class="profile">
             <nav>
               <a href="../heejin/mypage/mypage.php">프로필</a>
@@ -49,10 +50,12 @@ else {
       </div>
       <div class="content">
         <div class="genre_like_container">
-          <div class="title_genre_container"><span class="title_genre">국가별 좋아요 수 TOP3</span></div>
+          <div class="title_genre_container"><span class="title_genre">[한국-일본-미국] 좋아요 수</span></div>
           <?php if($res2) {
             $flag = true;
-            while($flag) { ?>
+            $newArray = "dummy";
+            while($flag) { 
+              if($newArray == null) break; ?>
               <div class="content_genre_container">
                 <?php while($newArray = mysqli_fetch_array($res2, MYSQLI_ASSOC)) { ?>
                   <div class="rank_container">
@@ -64,7 +67,7 @@ else {
                   if($newArray['title'] == 'ALL MOVIE') break;
                 } ?>
               </div><br>
-              <?php if($newArray['nation'] == 'ALL NATION') break;
+              <?php if($newArray!=null && $newArray['nation']=='ALL NATION') break;
               }
             } else {
               printf("결과 불러오는 데에 실패 : %s\n", mysqli_error($mysqli));
@@ -76,9 +79,9 @@ else {
             <?php if($res) {
                             $rank = 0;
                             while($newArray = mysqli_fetch_array($res, MYSQLI_ASSOC)) { ?>
-              <div class="movie_container" onclick="location.href='./detail.php?movie=<?php $link = $newArray['movie_id']; echo $link ?>';">
+              <div class="movie_container">
                   <span class="movie_rank"><?php $rank++; echo $rank;?></span></br></br>
-                  <span class="movie_title"><?php $title = $newArray['title']; echo $title;?></span></br>
+                  <span class="movie_title" onclick="location.href='./detail.php?movie=<?php $link = $newArray['movie_id']; echo $link ?>';"><?php $title = $newArray['title']; echo $title;?></span></br>
                   <button class="movie_like_btn" onclick="window.location.href='./like.php?movie=<?=$newArray['movie_id']?>'">좋아요<?php $like_count = $newArray['like_count'];?></a><span class="movie_like_cnt"><?php echo $like_count?></span></button>
                   <button class="movie_dislike_btn" onclick="window.location.href='./dislike.php?movie=<?=$newArray['movie_id']?>'">싫어요<?php $dislike_count = $newArray['dislike_count'];?><span class="movie_like_cnt"><?php echo $dislike_count?></span></button></br>
                   

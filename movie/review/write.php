@@ -12,7 +12,7 @@ else {
     $date = new DateTime();
     $stringDate = $date->format('Y-m-d H:i:s');
     $sql = "insert into review (user_id, movie_id, content, score, created_date, modified_date) 
-    values (1, '".$_POST["movieId"]."', '".$_POST["reviewtext"]."', 
+    values ('{$_SESSION['userid']}', '".$_POST["movieId"]."', '".$_POST["reviewtext"]."', 
     '".$_POST["reviewscore"]."', '".$stringDate."', '".$stringDate."')" ;
     
     $res = mysqli_query($mysqli, $sql);
