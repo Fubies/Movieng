@@ -38,10 +38,10 @@ else {
               </ul>
           </nav>
           </div>
-          <h2>MOVIENG</h2>
+          <div class="logo" onclick="location.href='../info/home/home.php';"><h2>MOVIENG</h2></div>
           <div class="profile">
             <nav>
-              <a href="../heejin/mypage/mypage.php">프로필</a>
+              <a href="../info/mypage/mypage.php">프로필</a>
             </nav>
           </div>
         </header>

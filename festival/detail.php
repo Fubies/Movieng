@@ -39,10 +39,10 @@ if(mysqli_connect_errno()){
                 </ul>
             </nav>
             </div>
-            <div class="logo" onclick="location.href='../heejin/home/home.php';"><h2>MOVIENG</h2></div>
+            <div class="logo" onclick="location.href='../info/home/home.php';"><h2>MOVIENG</h2></div>
             <div class="profile">
                 <nav>
-                <a href="../heejin/mypage/mypage.php">프로필</a>
+                <a href="../info/mypage/mypage.php">프로필</a>
                 </nav>
             </div>
             </header>

@@ -1,5 +1,5 @@
 <?php 
-  $mysqli = mysqli_connect("localhost", "root", "", "team01", "3306");
+  $mysqli = mysqli_connect("localhost", "root", "", "team01", "3306")
      or die('데이터 베이스가 없습니다.');
 
     $userid = $_GET['useremail'];
