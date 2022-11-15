@@ -120,14 +120,14 @@ insert into genre(genre_name) values('드라마');
 insert into genre(genre_name) values('공연');
 insert into genre(genre_name) values('서부극(웨스턴)');
 
-insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('극장판 검정고무신 : 즐거운 나의 집', '2022', '한국','장편','개봉','송정율,송요한','㈜형설앤,㈜새한프로덕션');
+insert into movie(title, released_date, nation, movie_type, movie_status, director, production, like_count, dislike_count) values('극장판 검정고무신 : 즐거운 나의 집', '2022', '한국','장편','개봉','송정율,송요한','㈜형설앤,㈜새한프로덕션', 2, 0);
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('4DX 문유', '2022', '한국','장편','개봉','윤현정,이지혜,문교리','씨제이포디플렉스 주식회사');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('음양살수', '2019', '중국','장편','기타','','');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('천년여우', '2019', '중국','장편','기타','','');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('소리가 사라진 마을', '2020', '한국','단편','기타','정지나','');
-insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('마이 리틀 레나타', '2020', '독일','장편','기타','','');
+insert into movie(title, released_date, nation, movie_type, movie_status, director, production, like_count, dislike_count) values('마이 리틀 레나타', '2020', '독일','장편','기타','','', 1, 0);
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('유포자들', '2022', '한국','장편','개봉예정','','KBS');
-insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('캡틴 아메리카: 윈터 솔져', '2014', '미국','장편','개봉','조 루소,안소니 루소','');
+insert into movie(title, released_date, nation, movie_type, movie_status, director, production, like_count, dislike_count) values('캡틴 아메리카: 윈터 솔져', '2014', '미국','장편','개봉','조 루소,안소니 루소','', 3, 0);
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('캡틴 아메리카: 시빌 워', '2015', '미국','장편','개봉','안소니 루소,조 루소','');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('더 메뉴', '2022', '미국','장편','개봉예정','마크 미로드','');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('데시벨', '2021', '한국','장편','개봉예정','황인호','이스트드림시노펙스(주),㈜기억속의매미');
@@ -141,7 +141,7 @@ insert into movie(title, released_date, nation, movie_type, movie_status, direct
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('캐리어우먼', '2022', '한국','단편','기타','황동욱','');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('먼길 3부작', '2019', '한국','옴니버스','기타','황동욱','');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('졸작이 살아있다', '2022', '한국','단편','기타','','');
-insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('정직한 후보2', '2022', '한국','장편','개봉','장유정','(주)수필름,(주)홍필름');
+insert into movie(title, released_date, nation, movie_type, movie_status, director, production, like_count, dislike_count) values('정직한 후보2', '2022', '한국','장편','개봉','장유정','(주)수필름,(주)홍필름', 3, 0);
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('만원의 행복', '2022', '한국','단편','기타','','');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('혜주', '2020', '한국','단편','기타','황동욱','');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('또 만나요', '2022', '한국','단편','기타','옥수분','');
@@ -177,7 +177,7 @@ insert into movie(title, released_date, nation, movie_type, movie_status, direct
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('거래완료', '2020', '한국','장편','개봉','조경호','한국예술종합학교 산학협력단');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('비룡외전', '2022', '중국','장편','기타','','');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('킹덤2: 아득한 대지로', '2022', '미국','장편','개봉예정','사토 신스케','');
-insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('신 에반게리온 극장판', '2021', '일본','장편','개봉','안노 히데아키','');
+insert into movie(title, released_date, nation, movie_type, movie_status, director, production, like_count, dislike_count) values('신 에반게리온 극장판', '2021', '일본','장편','개봉','안노 히데아키','', 2, 1);
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('잔혹했던 1948년 탐라의 봄', '2022', '한국','장편','기타','권순도','퓨어웨이픽쳐스');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('작은연못', '2021', '한국','장편','개봉예정','','');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('크리스마스 캐럴', '2022', '한국','장편','개봉준비','김성수','(주)화인컷,(주)블루플랜잇');
@@ -208,7 +208,7 @@ insert into movie(title, released_date, nation, movie_type, movie_status, direct
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('로드 어헤드', '2021', '캐나다','장편','기타','','');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('영화사 2부', '1998', '프랑스','장편','기타','장 뤽 고다르','');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('영화사 1부', '1998', '프랑스','장편','기타','장 뤽 고다르','');
-insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('노 맨즈 랜드', '2020', '미국','장편','기타','코너 알린','');
+insert into movie(title, released_date, nation, movie_type, movie_status, director, production, like_count, dislike_count) values('노 맨즈 랜드', '2020', '미국','장편','기타','코너 알린','', 2, 0);
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('같은 속옷을 입는 두 여자', '2021', '한국','장편','개봉예정','김세인','한국영화아카데미');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('양성인간', '2021', '대만','장편','개봉예정','','');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('영웅', '2020', '한국','장편','개봉준비','윤제균','(주)제이케이필름,(주)씨제이이엔엠');
@@ -242,7 +242,7 @@ insert into movie(title, released_date, nation, movie_type, movie_status, direct
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('광적인 이야기꾼들에 관한 연대기', '2010', '한국','단편','기타','차재민','');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('시간이 얼마 남지 않았음을 알린다. 탕!탕!탕!', '2009', '한국','단편','기타','차재민','');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('존 덴버 죽이기', '2019', '필리핀','장편','개봉예정','아덴 로즈 콘데즈','');
-insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('명탐정 코난: 할로윈의 신부', '2022', '일본','장편','개봉','미츠나카 스스무','');
+insert into movie(title, released_date, nation, movie_type, movie_status, director, production, like_count, dislike_count) values('명탐정 코난: 할로윈의 신부', '2022', '일본','장편','개봉','미츠나카 스스무','', 2, 0);
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('관계의 일변', '2022', '한국','장편','기타','','주식회사 씨엠닉스');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('더 게임', '2022', '헝가리','장편','개봉예정','페테르 퍼자카스','');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('원피스 필름 레드', '2022', '일본','장편','개봉예정','타니구치 고로','');
@@ -272,7 +272,7 @@ insert into movie(title, released_date, nation, movie_type, movie_status, direct
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('들을 수 없어도', '2022', '한국','단편','기타','','');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('꿈의나라', '2022', '한국','단편','기타','','');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('킹 VS 몬스터', '2021', '미국','장편','기타','다니엘 러스코','');
-insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('괴인', '2022', '한국','장편','기타','','');
+insert into movie(title, released_date, nation, movie_type, movie_status, director, production, like_count, dislike_count) values('괴인', '2022', '한국','장편','기타','','', 1, 1);
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('바다로 간 물고기', '2022', '한국','단편','기타','윤다영','');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('하이라이트', '2019', '한국','단편','기타','김영석','');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('당신이 내리는 밤', '2021', '한국','단편','기타','양경희','');
@@ -319,7 +319,7 @@ insert into movie(title, released_date, nation, movie_type, movie_status, direct
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('프로메어', '2019', '일본','장편','개봉','이마이시 히로유키','');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('더 요트', '2022', '미국','장편','개봉','','');
 insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('브로커', '2022', '한국','장편','개봉','고레에다 히로카즈','영화사 집');
-insert into movie(title, released_date, nation, movie_type, movie_status, director, production) values('헤어질 결심', '2022', '한국','장편','개봉','박찬욱','(주)모호필름');
+insert into movie(title, released_date, nation, movie_type, movie_status, director, production, like_count, dislike_count) values('헤어질 결심', '2022', '한국','장편','개봉','박찬욱','(주)모호필름', 2, 0);
 
 insert into category(genre_id, movie_id) values(2, 1);
 insert into category(genre_id, movie_id) values(5, 2);

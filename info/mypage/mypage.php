@@ -1,6 +1,6 @@
 <?php
 session_start();
-$mysqli = mysqli_connect("localhost", "root", "", "team01", "3306")
+    $mysqli = mysqli_connect("localhost", "team01", "team01", "team01", "3307")
      or die('데이터 베이스가 없습니다.');
 
     //$sql = "SELECT bio FROM user, profile WHERE user.user_id=profile.user_id and user.user_id = '{$_SESSION['userid']}'";

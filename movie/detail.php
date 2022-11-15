@@ -1,6 +1,7 @@
 <?php
 session_start();
-$mysqli = mysqli_connect("localhost", "root", "", "team01", "3306");
+
+$mysqli = mysqli_connect("localhost", "team01", "team01", "team01", "3307");
 $id = $_GET['movie'];
 
 if(mysqli_connect_errno()) {
@@ -79,6 +80,12 @@ else {
                         echo $newArray3['nickname']; ?></span>
                       <span class="text"><?php echo $newArray['content'] ?></span>
                       <span class="score"><?php echo $newArray['score']?></span>
+<<<<<<< HEAD
+=======
+                      <button class="delete_button" onclick="location.href='./review.php?movie=<?=$id?>&review=<?=$newArray['review_id']?>';">
+                        삭제                    
+                      </button>
+>>>>>>> 5a2b105991556242e126e974362478a3ed9098d0
                     </div>
                     <br>
                   <?php }
