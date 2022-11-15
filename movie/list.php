@@ -9,7 +9,7 @@ if(mysqli_connect_errno()) {
 else {
     $sql = "select * from movie order by like_count desc, title";
     $res = mysqli_query($mysqli, $sql);
-
+    
     $sql2 = "SELECT 
     COALESCE(m.nation, 'ALL NATION') AS nation, COALESCE(m.title, 'ALL MOVIE') AS title, COUNT(m.title) like_count
     FROM movie m , good g WHERE m.movie_id = g.movie_id AND nation IN ('한국', '일본', '미국') GROUP BY m.nation DESC, m.title WITH ROLLUP";
