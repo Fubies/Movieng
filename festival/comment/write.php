@@ -11,11 +11,24 @@ if(mysqli_connect_errno()) {
     printf("Connected failed : %s\n",mysqli_connect_error());
     exit();
 }
-else {
+
+$mysqli->begin_transaction();
+
+try {
     $sql = "INSERT INTO comment (user_id, post_id, content)
     values ('{$_SESSION['userid']}', '".$post_id."', '".$_POST["commentContent"]."')";
     
+    // post 테이블 업데이트
+    $plus_sql = "UPDATE post SET comment_cnt = comment_cnt + 1 WHERE post_id='$post_id'";
+    $plus_res = $mysqli->query($plus_sql);
+
     $res = mysqli_query($mysqli, $sql);
+
+    $mysqli->commit();
+    echo 'commit';
+} catch (mysqli_sql_exception $exception) {
+    $mysqli->rollback();
+    echo 'rollback';
 }
 
 if($res) {?>
