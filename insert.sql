@@ -596,3 +596,33 @@ insert into category(genre_id, movie_id) values(6, 198);
 insert into category(genre_id, movie_id) values(17, 199);
 insert into category(genre_id, movie_id) values(15, 200);
 insert into category(genre_id, movie_id) values(13, 200);
+
+insert into user(email, password, nickname) values
+('dev.siyeon@gmail.com', '$2y$10$eCIywz7MlL7t6MTStUvfy.piq17dBxNP7xOqBLQ1qzTt/TnrymEIi', '시연'),
+('fubies@naver.com', '$2y$10$tcaBHzh9IUXdY7b8vfOZoeoxAdGE1jygXVTzXmHStZ5qC0Crg1wde', '퍼비'),
+('team01@ewhain.net', '$2y$10$JX.sYKGIkeCWJu/wKORyF.DpVRXF0rwctI.a5/XLwWsuvJepJHX9C', '빅데응');
+
+INSERT INTO `good` (`user_id`, `movie_id`) VALUES
+(1, 1),
+(1, 22),
+(1, 153),
+(1, 8),
+(1, 89),
+(1, 58),
+(1, 123),
+(2, 8),
+(2, 22),
+(2, 89),
+(2, 58),
+(3, 1),
+(3, 8),
+(3, 22),
+(3, 123),
+(3, 6),
+(3, 200),
+(1, 200);
+
+INSERT INTO `bad` (`user_id`, `movie_id`) VALUES
+(2, 153),
+(3, 58),
+(3, 90);
