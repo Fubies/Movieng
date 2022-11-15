@@ -39,7 +39,7 @@ if(mysqli_connect_errno()){
                 </ul>
             </nav>
             </div>
-            <div class="logo" onclick="location.href='../info/home/home.php';"><h2>MOVIENG</h2></div>
+            <div class="logo" onclick="location.href='../../info/home/home.php';"><h2>MOVIENG</h2></div>
             <div class="profile">
                 <nav>
                 <a href="../../info/mypage/mypage.php">프로필</a>
