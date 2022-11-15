@@ -9,24 +9,6 @@ if(mysqli_connect_errno()) {
 else {
     $sql = "select * from movie order by like_count desc, title";
     $res = mysqli_query($mysqli, $sql);
-
-    // if($res) {
-    //     $rank = 0;
-    //     while($newArray = mysqli_fetch_array($res, MYSQLI_ASSOC)) {
-    //         $rank++;
-    //         $id = $newArray['movie_id'];
-    //         $title = $newArray['title'];
-            
-    //         $like_count = $newArray['like_count'];
-    //         // echo '<td class="like-container"><button type="button" class="btn-like" data-article-id="'.$id.'">'
-    //         //             .'<span class="heart-shape">♡</span> <span class="like-count">'.$like_count.'</span></button></td>';
-
-    //     }
-    // } else {
-    //     printf("결과 불러오는 데에 실패 : %s\n", mysqli_error($mysqli));
-    // }
-    // mysqli_free_result($res);
-    // mysqli_close($mysqli);
 }
 ?>
 
