@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$mysqli = mysqli_connect("localhost", "team01", "team01", "team01", "3307");
+$mysqli = mysqli_connect("localhost", "root", "", "team01", "3306");
 
 if(mysqli_connect_errno()) {
     printf("Connected failed : %s\n",mysqli_connect_error());
@@ -47,8 +47,8 @@ else {
     </div>
     <div class="home_title_container">
         <div class="home_content">영화인들을 위한 종합 영화 커뮤니티</div>
-        <div class="home_title"><a class="title_txt" href="">MOVIENG</a></div>
-        <div class="home_content">영화 리뷰 | 영화제 동행 모집</div>
+        <div class="home_title"><a class="title_txt" href="../../movie/list.php">MOVIENG</a></div>
+        <div class="home_content"><a class="title_txt" href="../../movie/list.php">영화 리뷰 | 영화제 동행 모집</div>
     </div>
     <div class="home_menu_container">
         <div class="movies_home">
@@ -80,7 +80,7 @@ else {
         <div class="festivals_home">
                 <div class="menu_movie_upperWrap">
                     <h2 class="menu_movie_title">국내 영화제 리스트</h2>
-                    <a class="menu_movie_href" href="">더보기</a>
+                    <a class="menu_movie_href" href="../../festival/list.php">더보기</a>
                 </div>
                 <hr />
                 <div class="menu_movie_list">
