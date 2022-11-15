@@ -12,7 +12,7 @@ else {
     $sql = "select released_date, title, rank() over (order by released_date desc) as 'rank' from movie limit 5";
     $res = mysqli_query($mysqli, $sql);
 
-    $sql2 = "select kor_title, city from festival where nation='한국' limit 5";
+    $sql2 = "select kor_title, city from festival where main='예' limit 5";
     $res2 = mysqli_query($mysqli, $sql2);
 
 }
@@ -79,7 +79,7 @@ else {
         </div>
         <div class="festivals_home">
                 <div class="menu_movie_upperWrap">
-                    <h2 class="menu_movie_title">국내 영화제 리스트</h2>
+                    <h2 class="menu_movie_title">주요 영화제 리스트</h2>
                     <a class="menu_movie_href" href="">보러가기</a>
                 </div>
                 <hr />

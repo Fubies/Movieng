@@ -27,8 +27,9 @@ $mysqli = mysqli_connect('localhost', 'team01', 'team01', 'team01', '3307')
         <div class="bio"><?php echo $row['bio']; ?></div>
         <div class="btn_wrap">
             <div class="profile_btn"><a href="./updatebio.html">바이오 수정</a></div>
-            <div class="profile_btn"><a href="../home/home.php">홈 돌아가기</a></div>
+            <div class="profile_btn"><a href="./withdrawal.php">회원 탈퇴</a></div>
         </div>
+        <div class="profile_btn2"><a href="../home/home.php">홈 돌아가기</a></div>
     </div>
     <script>
     </script>
