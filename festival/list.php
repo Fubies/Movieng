@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 $mysqli = mysqli_connect("localhost", "root", "", "team01", "3306");
 
 if(mysqli_connect_errno()){
@@ -41,6 +42,7 @@ if(mysqli_connect_errno()){
                 </div>
             </header>
         </div>
+
         <div class = "content">
             <div class="festival_container">
                 <div class="festival_title_container"><span class="festival_title">영화제 목록</span></div>
