@@ -11,7 +11,10 @@ if(mysqli_connect_errno()) {
     printf("Connected failed : %s\n",mysqli_connect_error());
     exit();
 }
-else {
+
+$mysqli->begin_transaction();
+
+try {
     $date = new DateTime();
     $stringDate = $date->format('Y-m-d H:i:s');
     $sql = "INSERT INTO post (user_id, festival_id, title, content, created_date, modified_date) 
@@ -19,6 +22,12 @@ else {
     '".$_POST["postContent"]."', '".$stringDate."', '".$stringDate."')" ;
     
     $res = mysqli_query($mysqli, $sql);
+
+    $mysqli->commit();
+    echo 'commit';
+} catch (mysqli_sql_exception $exception) {
+    $mysqli->rollback();
+    echo 'rollback';
 }
 
 if($res) {?>
