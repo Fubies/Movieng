@@ -79,6 +79,9 @@ else {
                         echo $newArray3['nickname']; ?></span>
                       <span class="text"><?php echo $newArray['content'] ?></span>
                       <span class="score"><?php echo $newArray['score']?></span>
+                      <button class="delete_button" onclick="location.href='./review.php?movie=<?=$id?>&review=<?=$newArray['review_id']?>';">
+                        삭제                    
+                      </button>
                     </div>
                     <br>
                   <?php }

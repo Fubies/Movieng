@@ -2,7 +2,6 @@
 include 'list.php'; //$mysqli 변수 포함
 
 //$user_id = $_SESSION['userid']; //로그인한 유저 id
-$user_id = 2;
 $movie_id = $_GET['movie']; //영화 아이디
 
 if(!empty($movie_id)) {
