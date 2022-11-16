@@ -1,7 +1,7 @@
 <?php
 session_start();
+$mysqli = mysqli_connect("localhost", "team01", "team01", "team01");
 
-$mysqli = mysqli_connect("localhost", "team01", "team01", "team01", "3307");
 $id = $_GET['movie'];
 
 if(mysqli_connect_errno()) {
@@ -12,6 +12,11 @@ else {
     $sql = "select * from movie where movie_id = '".$id."'";
     $res = mysqli_query($mysqli, $sql);
     $newArray = mysqli_fetch_array($res, MYSQLI_ASSOC);
+
+    $sql3 = "select c.movie_id, g.genre_name from category c, genre g where c.genre_id = g.genre_id and c.movie_id='".$id."'";
+    $res3 = mysqli_query($mysqli, $sql3);
+    $newArray3 = mysqli_fetch_array($res3, MYSQLI_ASSOC);
+
 
     $sql2 = "select * from review where movie_id = '".$id."'";
     $res2 = mysqli_query($mysqli, $sql2);
@@ -53,18 +58,19 @@ else {
             <div class="content_container">
               <div class ="description_container">
                 <div class="description">
-                  <span class="date">개봉일: <?php echo $newArray['released_date'] ?></span>
-                  <span class="nation">국가: <?php echo $newArray['nation'] ?></span>
-                  <span class="status">개봉여부: <?php echo $newArray['movie_status'] ?></span>
-                  <span class="type">영화타입: <?php echo $newArray['movie_type'] ?></span>
+                  <span class="date">개봉일: <?php $var = $newArray['released_date']; if(!empty($var)){ echo $var; } else {echo "정보 없음";} ?></span>
+                  <span class="nation">국가: <?php $var =$newArray['nation']; if(!empty($var)){ echo $var; } else {echo "정보 없음";} ?></span>
+                  <span class="status">개봉여부: <?php $var = $newArray['movie_status']; if(!empty($var)){ echo $var; } else {echo "정보 없음";}?></span>
+                  <span class="type">영화타입: <?php $var = $newArray['movie_type']; if(!empty($var)){ echo $var; } else {echo "정보 없음";} ?></span>
                 </div><br>
                 <div class="description">
-                  <span class="director">감독: <?php echo $newArray['director'] ?></span>
-                  <span class="production">영화사: <?php echo $newArray['production'] ?></span>
+                  <span class="genre">장르: <?php $var = $newArray3['genre_name']; if(!empty($var)){ echo $var; } else {echo "정보 없음";}?></span>
+                  <span class="director">감독: <?php $var = $newArray['director']; if(!empty($var)){ echo $var; } else {echo "정보 없음";} ?></span>
+                  <span class="production">영화사: <?php $var = $newArray['production']; if(!empty($var)){ echo $var; } else {echo "정보 없음";} ?></span>
                 </div><br>
                 <div class="description">
-                  <span class="like">좋아요 - <?php echo $newArray['like_count'] ?></span>
-                  <span class="dislike">싫어요 - <?php echo $newArray['dislike_count'] ?></span>
+                  <span class="like">좋아요 - <?php $var = $newArray['like_count']; if(!empty($var)){ echo $var; } else {echo "0";} ?></span>
+                  <span class="dislike">싫어요 - <?php $var = $newArray['dislike_count']; if(!empty($var)){ echo $var; } else {echo "0";} ?></span>
                 </div>
               </div>
               <br>
@@ -80,12 +86,9 @@ else {
                         echo $newArray3['nickname']; ?></span>
                       <span class="text"><?php echo $newArray['content'] ?></span>
                       <span class="score"><?php echo $newArray['score']?></span>
-<<<<<<< HEAD
-=======
                       <button class="delete_button" onclick="location.href='./review.php?movie=<?=$id?>&review=<?=$newArray['review_id']?>';">
                         삭제                    
                       </button>
->>>>>>> 5a2b105991556242e126e974362478a3ed9098d0
                     </div>
                     <br>
                   <?php }
