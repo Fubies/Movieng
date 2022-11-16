@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$mysqli = mysqli_connect("localhost", "team01", "team01", "team01", "3306");
+$mysqli = mysqli_connect("localhost", "team01", "team01", "team01", "3307");
 
 if(mysqli_connect_errno()) {
     printf("Connected failed : %s\n",mysqli_connect_error());
@@ -80,7 +80,7 @@ else {
         <div class="festivals_home">
                 <div class="menu_movie_upperWrap">
                     <h2 class="menu_movie_title">주요 영화제 리스트</h2>
-                    <a class="menu_movie_href" href="">더보기</a>
+                    <a class="menu_movie_href" href="../../festival/list.php">더보기</a>
                 </div>
                 <hr />
                 <div class="menu_movie_list">

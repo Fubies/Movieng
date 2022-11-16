@@ -7,7 +7,7 @@ drop table category;
 drop table genre;
 drop table review;
 drop table movie;
-drop table board;
+drop table interest;
 drop table profile;
 drop table post;
 drop table user;

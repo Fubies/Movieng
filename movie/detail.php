@@ -1,6 +1,7 @@
 <?php
 session_start();
-$mysqli = mysqli_connect("localhost", "team01", "team01", "team01", "3306");
+
+$mysqli = mysqli_connect("localhost", "team01", "team01", "team01", "3307");
 $id = $_GET['movie'];
 
 if(mysqli_connect_errno()) {
@@ -34,14 +35,14 @@ else {
             <nav>
               <ul>
                   <li><a href="./list.php">영화 살펴보기</a></li>
-                  <li><a href="">영화제 살펴보기</a></li>
+                  <li><a href="../festival/list.php">영화제 살펴보기</a></li>
               </ul>
           </nav>
           </div>
-          <h2>MOVIENG</h2>
+          <div class="logo" onclick="location.href='../info/home/home.php';"><h2>MOVIENG</h2></div>
           <div class="profile">
             <nav>
-              <a href="../heejin/mypage/mypage.php">프로필</a>
+              <a href="../info/mypage/mypage.php">프로필</a>
             </nav>
           </div>
         </header>
@@ -79,9 +80,12 @@ else {
                         echo $newArray3['nickname']; ?></span>
                       <span class="text"><?php echo $newArray['content'] ?></span>
                       <span class="score"><?php echo $newArray['score']?></span>
+<<<<<<< HEAD
+=======
                       <button class="delete_button" onclick="location.href='./review.php?movie=<?=$id?>&review=<?=$newArray['review_id']?>';">
                         삭제                    
                       </button>
+>>>>>>> 5a2b105991556242e126e974362478a3ed9098d0
                     </div>
                     <br>
                   <?php }

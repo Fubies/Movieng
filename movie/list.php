@@ -1,6 +1,6 @@
 <?php
 session_start();
-$mysqli = mysqli_connect("localhost", "team01", "team01", "team01", "3306");
+$mysqli = mysqli_connect("localhost", "team01", "team01", "team01", "3307");
 
 if(mysqli_connect_errno()) {
     printf("Connected failed : %s\n",mysqli_connect_error());
@@ -9,12 +9,11 @@ if(mysqli_connect_errno()) {
 else {
     $sql = "select * from movie order by like_count desc, title";
     $res = mysqli_query($mysqli, $sql);
-    
+
     $sql2 = "SELECT 
     COALESCE(m.nation, 'ALL NATION') AS nation, COALESCE(m.title, 'ALL MOVIE') AS title, COUNT(m.title) like_count
     FROM movie m , good g WHERE m.movie_id = g.movie_id AND nation IN ('한국', '일본', '미국') GROUP BY m.nation DESC, m.title WITH ROLLUP";
     $res2 = mysqli_query($mysqli, $sql2);
-
 }
 ?>
 
@@ -36,14 +35,14 @@ else {
             <nav>
               <ul>
                   <li><a href="./list.php">영화 살펴보기</a></li>
-                  <li><a href="">영화제 살펴보기</a></li>
+                  <li><a href="../festival/list.php">영화제 살펴보기</a></li>
               </ul>
           </nav>
           </div>
-          <div class="logo" onclick="location.href='../heejin/home/home.php';"><h2>MOVIENG</h2></div>
+          <div class="logo" onclick="location.href='../info/home/home.php';"><h2>MOVIENG</h2></div>
           <div class="profile">
             <nav>
-              <a href="../heejin/mypage/mypage.php">프로필</a>
+              <a href="../info/mypage/mypage.php">프로필</a>
             </nav>
           </div>
         </header>
