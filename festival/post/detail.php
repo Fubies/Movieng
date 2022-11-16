@@ -2,8 +2,8 @@
 session_start();
 
 $post_id = $_GET['post_id'];
-
 $mysqli = mysqli_connect("localhost", "team01", "team01", "team01");
+
 if(mysqli_connect_errno()){
     printf("Connected failed : %s\n", mysqli_connect_error());
     exit();

@@ -1,6 +1,5 @@
 <?php 
 session_start();
-
     $mysqli = mysqli_connect("localhost", "team01", "team01", "team01")
      or die('데이터 베이스가 없습니다.');
 

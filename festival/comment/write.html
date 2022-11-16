@@ -14,12 +14,12 @@
           <div class="navigator">
             <nav>
               <ul>
-                  <li><a href="../list.php">영화 살펴보기</a></li>
-                  <li><a href="../../festival/list.php">영화제 살펴보기</a></li>
+                  <li><a href="../../movie/list.php">영화 살펴보기</a></li>
+                  <li><a href="../list.php">영화제 살펴보기</a></li>
               </ul>
           </nav>
           </div>
-          <div class="logo" onclick="location.href='../info/home/home.php';"><h2>MOVIENG</h2></div>
+          <div class="logo" onclick="location.href='../../info/home/home.php';"><h2>MOVIENG</h2></div>
           <div class="profile">
             <nav>
               <a href="../../info/mypage/mypage.php">프로필</a>
@@ -28,17 +28,19 @@
         </header>
       </div>
       <div class="content">
-        <div class="title_container"><span class="title"><h2>리뷰작성</h2></span></div>
+        <div class="title_container">
+            <span class="title"><h2>댓글 작성</h2></span>
+        </div>
         <div class="content_container">
             <div class="login_container">
                   <form action="write.php" method="post" class="login_form">
                     <p>
-                      <textarea name="reviewtext" class="input_text" placeholder="리뷰 내용"></textarea>
+                        <input name="commentTitle" type="hidden" class="comment_title" placeholder="게시글 제목">
                     </p>
                     <p>
-                      <input type="number" name="reviewscore" min="1" max="5" class="input_score" placeholder="점수"/>
+                      <textarea name="commentContent" class="comment_content" placeholder="댓글 내용"></textarea>
                     </p>
-                    <p><input type="hidden" id="movieId" name="movieId" value=""></p>
+                    <p><input type="hidden" id="post_id" name="post_id" value=""></p>
                     <p><input type="submit" value="작성 완료" class="write_btn"/></p>
                   </form>
             </div>
@@ -58,9 +60,9 @@
             }
         }
     }
-    var movieId = getParam("movie");
-    document.getElementById("movieId").value = movieId;
-    console.log(movieId);
+    var post_id = getParam("post_id");
+    document.getElementById("post_id").value = post_id;
+    console.log(post_id);
 
   </script>
 </html>
