@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$mysqli = mysqli_connect("localhost", "team01", "team01", "team01", "3307");
+$mysqli = mysqli_connect("localhost", "team01", "team01", "team01");
 
 echo "<script>console.log('consoletest : ". $_POST["movieId"]. "');</script>";
 

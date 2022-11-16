@@ -174,7 +174,7 @@ CREATE TABLE `good` (
   KEY `FK_GOOD_MOVIE_idx` (`movie_id`),
   CONSTRAINT `FK_GOOD_USER` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_LIKE_MOVIE` FOREIGN KEY (`movie_id`) REFERENCES `movie` (`movie_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -183,7 +183,7 @@ CREATE TABLE `good` (
 
 LOCK TABLES `good` WRITE;
 /*!40000 ALTER TABLE `good` DISABLE KEYS */;
-INSERT INTO `good` VALUES (1,1,1),(2,1,22),(3,1,153),(4,1,8),(5,1,89),(6,1,58),(7,1,123),(8,2,8),(9,2,22),(10,2,89),(11,2,58),(12,3,1),(13,3,8),(14,3,22),(15,3,123),(16,3,6),(17,3,200),(18,1,200);
+INSERT INTO `good` VALUES (1,1,1),(2,1,22),(3,1,8),(4,1,89),(5,1,58),(6,1,123),(7,2,8),(8,2,22),(9,2,89),(10,2,58),(11,3,1),(12,3,8),(13,3,22),(14,3,123),(15,3,6),(16,3,200),(17,1,200);
 /*!40000 ALTER TABLE `good` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -296,7 +296,7 @@ CREATE TABLE `profile` (
   PRIMARY KEY (`profile_id`),
   KEY `FK_PROFILE_USER_idx` (`user_id`),
   CONSTRAINT `FK_PROFILE_USER` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -305,6 +305,7 @@ CREATE TABLE `profile` (
 
 LOCK TABLES `profile` WRITE;
 /*!40000 ALTER TABLE `profile` DISABLE KEYS */;
+INSERT INTO `profile` VALUES (1,1,'Hello'),(2,2,'Hello'),(3,3,'Hello'),(4,4,'Hello'),(5,5,'Hello'),(6,6,'Hello');
 /*!40000 ALTER TABLE `profile` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -328,7 +329,7 @@ CREATE TABLE `review` (
   KEY `FK_MOVIE_idx` (`movie_id`),
   CONSTRAINT `FK_REVIEW_MOVIE` FOREIGN KEY (`movie_id`) REFERENCES `movie` (`movie_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_REVIEW_USER` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE SET NULL ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -337,6 +338,7 @@ CREATE TABLE `review` (
 
 LOCK TABLES `review` WRITE;
 /*!40000 ALTER TABLE `review` DISABLE KEYS */;
+INSERT INTO `review` VALUES (1,1,22,'정말 재미있게 봤습니다! 최고에요 :)',5,'2022-11-16 19:11:57','2022-11-16 19:11:57'),(2,1,8,'마블 영화는 언제나 성공적인거같아요! 너무 재미있습니다',4,'2022-11-16 19:12:21','2022-11-16 19:12:21'),(3,1,1,'어릴적 추억이 샘솟는 애니메이션이었어요! 나중에 동생하고 같이 오고싶어요',4,'2022-11-16 19:12:50','2022-11-16 19:12:50'),(4,1,58,'결말이 심오해서 해석하는 즐거움이 있었어요',5,'2022-11-16 19:13:21','2022-11-16 19:13:21'),(5,2,22,'라미란 배우님이 출연하신 영화는 언제나 최고인거같아요! 코미디 영화 보고싶은 분들께 추천드립니다 :)',4,'2022-11-16 19:14:24','2022-11-16 19:14:24'),(6,2,8,'친구들이랑 보러갔는데 너무 즐거웠어요! 마블영화 좋아하시면 추천드립니다',5,'2022-11-16 19:14:50','2022-11-16 19:14:50'),(7,2,89,'감정이입하게 되는 슬픈 영화였어요',3,'2022-11-16 19:15:13','2022-11-16 19:15:13'),(8,3,8,'역시 마블은 재미는 보장하고 가는거같아요 😊',4,'2022-11-16 19:16:40','2022-11-16 19:16:40'),(9,3,1,'기영이가 바나나를 먹고 눈물 흘리는 모습이 감동적이었어요 😥',4,'2022-11-16 19:17:48','2022-11-16 19:17:48'),(10,3,89,'흔한 신파극이었습니다... 비추천드려요!',1,'2022-11-16 19:18:09','2022-11-16 19:18:09'),(11,3,123,'명탐정 코난 팬이시라면 꼭 챙겨보세요! 너무 재밌어요! 🔥',5,'2022-11-16 19:18:43','2022-11-16 19:18:43'),(12,3,58,'내용이 너무 암울해서 기분이 안좋아졌어요 :(',2,'2022-11-16 19:19:09','2022-11-16 19:19:09'),(13,3,200,'박찬욱 감독님 영화는 다 챙겨봤어요! 이번 영화도 정말 명작입니다❤️',5,'2022-11-16 19:19:47','2022-11-16 19:19:47');
 /*!40000 ALTER TABLE `review` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -375,4 +377,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-11-16 17:49:16
+-- Dump completed on 2022-11-17  3:31:21
