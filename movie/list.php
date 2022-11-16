@@ -1,6 +1,6 @@
 <?php
 session_start();
-$mysqli = mysqli_connect("localhost", "team01", "team01", "team01");
+$mysqli = mysqli_connect("localhost", "team01", "team01", "team01", "3307");
 
 if(mysqli_connect_errno()) {
     printf("Connected failed : %s\n",mysqli_connect_error());
@@ -39,7 +39,7 @@ else {
               </ul>
           </nav>
           </div>
-          <div class="logo" onclick="location.href='../info/home/home.php';"><h2>MOVIENG</h2></div>
+          <div class="logo" onclick="location.href='../info/home/home.php';"><h1>MOVIENG</h1></div>
           <div class="profile">
             <nav>
               <a href="../info/mypage/mypage.php">프로필</a>
@@ -49,7 +49,7 @@ else {
       </div>
       <div class="content">
         <div class="genre_like_container">
-          <div class="title_genre_container"><span class="title_genre">[한국-일본-미국] 좋아요 수</span></div>
+          <div class="title_genre_container"><span class="title_genre"><h4>[한국-일본-미국] 좋아요 수</h4></span></div>
           <?php if($res2) {
             $flag = true;
             $newArray = "dummy";
@@ -74,7 +74,7 @@ else {
         </div>
         
         <div class="movie_rank_container">
-          <div class="movie_rank_title_container"><span class="movie_rank_title">영화 목록</span></div>
+          <div class="movie_rank_title_container"><span class="movie_rank_title"><h4>영화 목록</h4></span></div>
             <?php if($res) {
                             $rank = 0;
                             while($newArray = mysqli_fetch_array($res, MYSQLI_ASSOC)) { ?>

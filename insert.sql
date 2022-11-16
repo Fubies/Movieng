@@ -606,10 +606,12 @@ insert into user(email, password, nickname) values
 ('fubies1886@gmail.com', '$2y$10$KKsEMk7B/lJE9mePMAk63OhiTLW610.D4I5sSg7qTN1BoPudtViFe', '퍼비비'),
 ('nitro@gmail.com', '$2y$10$LV2pykfJbJFmn/D6A5IwWOGFnWz4suRYJrDMZ7v7gyxBtbLr7dd2G', '밍지');
 
+insert into profile(user_id,bio) values 
+(1, 'Hello'),(2, 'Hello'),(3, 'Hello'),(4, 'Hello'),(5, 'Hello'),(6, 'Hello');
+
 INSERT INTO `good` (`user_id`, `movie_id`) VALUES
 (1, 1),
 (1, 22),
-(1, 153),
 (1, 8),
 (1, 89),
 (1, 58),

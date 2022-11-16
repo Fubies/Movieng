@@ -20,7 +20,7 @@
     justify-content: space-evenly;
   }
 
-  .review_title {
+  .review_button {
     margin: auto;
     margin-bottom: 1rem;
     padding: 0.5rem;
@@ -40,7 +40,27 @@
     justify-content: space-between;
   }
 
+  .review_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .link {
+    margin-inline: 1rem;
+  }
+
+  .text {
+    display: inline-block;
+  }
+
   .delete_button {
     border: none;
-    background-color: inherit;
+    border-radius: 0.3rem;
+    background-color: rgb(225, 213, 255);
+    width: fit-content;
+    padding-inline: 0.5rem;
+    padding-top:0.1rem;
+    padding-bottom:0.1rem;
+    margin:auto;
   }
