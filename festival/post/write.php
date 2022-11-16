@@ -32,7 +32,7 @@ try {
 
 if($res) {?>
     <script>
-        alert("리뷰 작성에 성공하였습니다.")
+        alert("게시글 작성에 성공하였습니다.")
         location.href = "../detail.php?festival_id=<?php echo $festival_id?>";
     </script>
 <?php } 
