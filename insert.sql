@@ -1,104 +1,105 @@
 use team01;
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('부산국제영화제', 'Busan International Film Festival : BIFF', '아시아', '한국', '부산', 'http://www.biff.kr', '예');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('야마가타 국제다큐멘터리영화제', 'Yamagata International Documentary Film Festival', '아시아', '일본', '야마가타', 'http://www.yidff.jp', '예');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('시카고 국제영화제', 'Chicago International Film Festival', '북미주', '미국', '시카고', 'http://www.chicagofilmfestival.com', '예');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('토론토 국제영화제', 'Toronto International Film Festival', '북미주', '캐나다', '토론토', 'http://tiff.net', '예');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('상하이 국제영화제', 'Shanghai International Film & TV Festival', '아시아', '중국', '상하이', 'http://www.siff.com', '예');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('부천국제판타스틱영화제', 'Bucheon International Fantastic Film Festival : BIFAN', '아시아', '한국', '부천', 'http://www.bifan.kr', '예');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('애니마 문디 - 브라질 국제애니메이션영화제', 'Anima Mundi - International Animation Festival of Brazil', '중남미', '브라질', '리오데자네이로, 상파울로', '', '예');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('베를린 국제영화제', 'Berlin International Film Festival', '유럽', '독일', '베를린', 'http://www.berlinale.de', '예');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('모스크바 국제영화제', 'Moscow International Film Festival', '유럽', '러시아', '모스크바', 'http://www.moscowfilmfestival.ru', '예');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('안시 국제애니메이션영화제', 'Annecy International Animated Film Festival', '유럽', '프랑스', '안시', 'http://www.annecy.org/home', '예');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('칸 국제영화제', 'Cannes Film Festival', '유럽', '프랑스', '칸', 'http://www.festival-cannes.com', '예');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('선댄스 영화제', 'Sundance Film Festival', '북미주', '미국', '솔트레이크시티', 'http://www.sundance.org/festival', '예');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('카를로비 바리 국제영화제', 'Karlovy Vary International Film Festival', '유럽', '체코', '카를로비 바리', 'http://www.kviff.com', '예');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('마르델플라타 국제영화제', 'Mar del Plata International Film Festival', '중남미', '아르헨티나', '마르델플라타', 'http://www.mardelplatafilmfest.com', '예');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('전주국제영화제', 'Jeonju International Film Festival : JIFF', '아시아', '한국', '전주', 'http://www.jiff.or.kr', '예');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('베니스 국제영화제', 'Venice International Film Festival', '유럽', '이탈리아', '베니스', 'http://www.labiennale.org/en/cinema', '예');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('로카르노 국제영화제', 'Locarno International Film Festival', '유럽', '스위스', '로카르노', 'http://www.pardo.ch', '예');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('도쿄 국제영화제', 'Tokyo International Film Festival', '아시아', '일본', '도쿄', 'http://www.tiff-jp.net/', '예');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('크레떼이유 국제여성영화제', 'International Women film festival of Creteil', '유럽', '프랑스', '크레떼이유', 'http://www.filmsdefemmes.com', '예');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('가톨릭영화제', 'Catholic Film Festival', '아시아', '한국', '서울', 'http://www.caff.kr', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('충주단편영화제', 'Chungju Short Film Festival', '아시아', '한국', '충주', 'http://cafe.daum.net/cj-shortfl.daum.net', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('서울국제실험영화페스티벌', 'Experimental Film &amp; Video Festival in Seoul : EXiS', '아시아', '한국', '서울', 'http://www.ex-is.org', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('부천국제애니메이션페스티벌', 'Bucheon International Animation Festival : BIAF', '아시아', '한국', '부천', 'http://www.biaf.or.kr', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('제주여성영화제', 'Jeju Women\'s Film Festival', '아시아', '한국', '제주', 'http://jejuwomen.tistory.com', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('한국영화평론가협회상', 'The Korean Association of Film Critics Awards', '아시아', '한국', '서울', 'http://fca.kr/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('강정국제평화영화제', 'International PEACE Film Festival in GANGJEONG', '아시아', '한국', '제주도 서귀포', '', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('DMZ국제다큐멘터리영화제', 'DMZ International Documentary Film Festival', '아시아', '한국', '고양', 'http://www.dmzdocs.com', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('전주국제단편영화제', 'Jeonju International Short Film Festival: JISFF', '아시아', '한국', '전주', 'http://www.jisff.kr', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('들꽃영화상', 'Wildflower Film Awards Korea', '아시아', '한국', '서울', 'http://www.wildflower-awards.com/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('전북가족영화제', 'Jeonbuk Family Film Festival', '아시아', '한국', '전주', 'http://www.jfff.or.kr', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('서울국제여성영화제', 'Seoul International Women’s Film Festival : SIWFF', '아시아', '한국', '서울', 'http://www.siwff.or.kr', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('EBS 국제다큐영화제', 'EBS International Documentary Film Festival : EIDF', '아시아', '한국', '서울', 'http://www.eidf.co.kr/kor', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('제천국제음악영화제', 'Jecheon International Music & Film Festival : JIMFF', '아시아', '한국', '제천', 'http://www.jimff.org', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('정동진독립영화제', 'Jeongdongjin Independent Film Festival : JIFF', '아시아', '한국', '강릉', 'http://jiff.kr/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('전북독립영화제', 'Jeonbuk Independent Film Festival', '아시아', '한국', '전주', 'http://www.jifa.or.kr/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('광화문국제단편영화제', 'GwangHwaMun International Short Film Festival : GISFF', '아시아', '한국', '서울', 'http://www.gisff.kr/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('대종상영화제', 'DAEJONG FILM AWARDS', '아시아', '한국', '서울', '', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('울산단편영화제', 'Ulsan Short Film Festival: USFF', '아시아', '한국', '', 'http://uisff.com/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('부산국제어린이청소년영화제', 'Busan International Kids & Youth Film Festival : BIKY', '아시아', '한국', '부산', 'http://www.biky.or.kr', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('대한민국청소년영화제', 'Korea Youth Film Festival, INTYFF', '아시아', '한국', '대전', 'http://intyca.com/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('리치몬드국제영화제', '', '아시아', '한국', '', '', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('파이브플레이버스아시아', 'Five Flavours Asian Film Festival', '아시아', '한국', '', 'http://https://www.piecsmakow.pl/index.do', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('이흘라바 다큐', 'Ji.hlava International Documentary Film Festival', '아시아', '한국', '', 'http://https://www.ji-hlava.com/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('이흘라바 다큐', 'Ji.hlava International Documentary Film Festival', '아시아', '한국', '', 'http://https://www.ji-hlava.com/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('셰필드 호러', 'Celluloid Screams: Shefcontinent Horror Film Festival', '아시아', '한국', '', 'http://https://www.celluloidscreams.com/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('키츠뷔엘', 'Filmfestival Kitzbuehel', '아시아', '한국', '', 'http://https://ffkb.at/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('독빌 다큐', 'DOCVILLE International Documentary Film Festival', '아시아', '한국', '', '', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('룩셈부르크 시티', 'Luxembourg City Film Festival', '아시아', '한국', '', 'http://https://www.docville.be/en', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('애드먼턴', 'Edmonton International Film Festival', '아시아', '한국', '', 'http://https://edmontonfilmfest.com/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('KF세계영화주간', 'KF World Cinema Week', '아시아', '한국', '서울', 'http://kfworldcinemaweek.or.kr', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('서울남아시아영화제', 'International Film Festival of South Asia-Seoul: IFFSA-Seoul', '아시아', '한국', '서울', 'http://iffsa.kr/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('서울노인영화제', 'Seoul International Senior Film Festival : SISFF', '아시아', '한국', '서울', 'http://sisff.seoulnoin.or.kr', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('목포국도1호선독립영화제', 'Mokpo national Road 1 Independent Film Festival: NR1IFF', '아시아', '한국', '목포', 'http://www.facebook.com/nr1iff', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('강원영화제: 햇시네마 페스티벌', 'HAT Cinema Festival', '아시아', '한국', '', 'http://www.gwfilm.kr', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('평창국제평화영화제', 'PyeongChang International Peace Film Festival', '아시아', '한국', '평창', 'http://pipff.org', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('글래스고 영화제', 'Glasgow Film Festival', '아시아', '한국', '', 'http://glasgowfilm.org/glasgow-film-festival', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('충무로영화제-디렉터스 위크', 'Chungmuro Film Festival-directors Week', '아시아', '한국', '서울', 'http://https://thecmr.kr/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('무중력영화제', 'MUjungryuck Film Festival: MUFF', '아시아', '한국', '서울', 'http://www.instagram.com/youthzone_muff/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('서울영등포국제초단편영화제', 'Seoul Yeongdeungpo International Extreme-Short Image & Film Festival: SESIFF', '아시아', '한국', '서울', 'http://www.sesiff.org', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('서울독립영화제', 'Seoul Independent Film Festival : SIFF', '아시아', '한국', '서울', 'http://www.siff.kr/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('서울국제음식영화제', 'Seoul International Food Film Festival', '아시아', '한국', '서울', 'http://www.sifff.kr/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('성북청춘불패영화제', 'Seongbuk Film Festival', '아시아', '한국', '서울', 'http://www.sbff.co.kr/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('충무로단편영화제', 'Chungmuro Short Film Festival', '아시아', '한국', '서울', 'http://blog.naver.com/moonok0784', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('서울국제환경영화제', 'Seoul International Eco Film Festival : SIEFF', '아시아', '한국', '서울', 'http://sieff.kr/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('충북국제무예액션영화제', 'Chungbuk International Martial Arts & Action Film Festival : CIMAFF', '아시아', '한국', '청주', 'http://cimaff.kr/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('청주국제단편영화제', 'Cheongju International Short Film Festival : CISFF', '아시아', '한국', '청주', 'http://cjiff.co.kr', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('서울국제어린이영화제', 'Seoul International Children\'s Film Festival: SICFF', '아시아', '한국', '서울', 'http://www.sicff.kr', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('디아스포라영화제', 'Diaspora Film Festival : DIAFF', '아시아', '한국', '인천', 'http://www.diaff.org', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('부산국제단편영화제', 'Busan International Short Film Festival : BISFF', '아시아', '한국', '부산', 'http://www.bisff.org/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('울주세계산악영화제', 'Ulju Mountain Film Festival : UMFF', '아시아', '한국', '울주', 'http://www.umff.kr/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('서울인디애니페스트', 'Seoul Indie-AniFest: Korean Independent Animation Film Festival', '아시아', '한국', '서울', 'http://www.ianifest.org', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('한국퀴어영화제', 'Korea Queer Film Festival : KQFF', '아시아', '한국', '서울', 'http://kqff.co.kr/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('대전독립영화제', 'Daejeon Independent Film&Video Festival : DIFV', '아시아', '한국', '대전', 'http://www.difv.co.kr', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('대한민국청소년미디어대전', 'Korea Youth Media Festival : KYMF', '아시아', '한국', '서울', 'http://kymf.ssro.net/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('상록수다문화국제단편영화제', 'Evergreen Multi-culture International Short Film Festival', '아시아', '한국', '안산', 'http://www.evff.co.kr', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('울산국제영화제', 'Ulsan International Film Festival: UIFF', '아시아', '한국', '울산', 'http://www.ulsan.go.kr/uiff', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('한국청소년영화제', 'Korea Youth Film Festival: KYFF', '아시아', '한국', '광주광역시', 'http://cafe.daum.net/KYFF.macji', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('청룡영화상', 'The Blue Dragon Awards', '아시아', '한국', '서울', 'http://www.blueaward.co.kr/awards/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('KYFF단편영화제', 'Kookmin Youth Film Festival', '아시아', '한국', '', 'http://www.instagram.com/kyff_2021/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('강릉국제영화제', 'Gangneung International Film Festival', '아시아', '한국', '강릉', 'http://www.giff.kr/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('대청호가 그린 영화제', '', '아시아', '한국', '', '', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('제1회 건넛마을 영화제', '', '아시아', '한국', '', '', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('여성인권영화제', 'Film Festival for Women\'s Rights : FIWOM', '아시아', '한국', '서울', 'http://www.fiwom.org', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('황금촬영상 시상식', 'Korea Gold Awards Festival', '아시아', '한국', '가평', 'http://kgoldaward.com/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('부산독립영화제', 'Independent Film Festival BUSAN', '아시아', '한국', '부산', 'http://indiebusan.modoo.at/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('제주영화제', 'Jeju Film Festival', '아시아', '한국', '제주', 'http://www.jejuff.kr/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('인천독립영화제 : inFilm', 'Incheon Independent Film Festival', '아시아', '한국', '인천', 'http://cafe.daum.net/in-film', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('도시영화제', '', '아시아', '한국', '', 'http://blog.naver.com/urban_filmfestival', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('상록수디지로그월드영화제', '', '아시아', '한국', '', '', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('KTV 국민영상제', '', '아시아', '한국', '', '', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('헤이리시네마 국제단편영화제', '', '아시아', '한국', '', '', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('인천인권영화제', 'Incheon Human Rights Film Festival', '아시아', '한국', '인천', 'http://www.inhuriff.org', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('꽃심어린이청소년영화제', '', '아시아', '한국', '', '', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('천안춤영화제', 'CheonAn Dance Film Festival : CADFF', '아시아', '한국', '천안', 'http://www.cadff.kr', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('금천패션영화제', '', '아시아', '한국', '', '', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('원주여성영화제', '', '아시아', '한국', '', '', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('우리나라 가장 동쪽 영화제', '', '아시아', '한국', '', '', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('시네광주1980 온라인 영화제', '', '아시아', '한국', '', 'http://cineg1980.kr', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('김포국제청소년영화제', 'Gimpo International Youth Film Festival : GIYFF', '아시아', '한국', '김포', 'http://www.gimpoyff.com/', '아니오');
-insert into festival(kor_title, eng_title, continent, nation, city, url, main) values('광주독립영화제', 'Gwangju Independent Film Festival', '아시아', '한국', '광주', 'http://gift4u.or.kr/', '아니오');
+INSERT INTO `festival` (`kor_title`, `eng_title`, `continent`, `nation`, `city`, `url`, `main`, `interest_count`) VALUES
+('부산국제영화제', 'Busan International Film Festival : BIFF', '아시아', '한국', '부산', 'http://www.biff.kr', '예', 0),
+('야마가타 국제다큐멘터리영화제', 'Yamagata International Documentary Film Festival', '아시아', '일본', '야마가타', 'http://www.yidff.jp', '예', 0),
+('시카고 국제영화제', 'Chicago International Film Festival', '북미주', '미국', '시카고', 'http://www.chicagofilmfestival.com', '예', 0),
+('토론토 국제영화제', 'Toronto International Film Festival', '북미주', '캐나다', '토론토', 'http://tiff.net', '예', 0),
+('상하이 국제영화제', 'Shanghai International Film & TV Festival', '아시아', '중국', '상하이', 'http://www.siff.com', '예', 0),
+('부천국제판타스틱영화제', 'Bucheon International Fantastic Film Festival : BIFAN', '아시아', '한국', '부천', 'http://www.bifan.kr', '예', 0),
+('애니마 문디 - 브라질 국제애니메이션영화제', 'Anima Mundi - International Animation Festival of Brazil', '중남미', '브라질', '리오데자네이로, 상파울로', '', '예', 0),
+('베를린 국제영화제', 'Berlin International Film Festival', '유럽', '독일', '베를린', 'http://www.berlinale.de', '예', 0),
+('모스크바 국제영화제', 'Moscow International Film Festival', '유럽', '러시아', '모스크바', 'http://www.moscowfilmfestival.ru', '예', 0),
+('안시 국제애니메이션영화제', 'Annecy International Animated Film Festival', '유럽', '프랑스', '안시', 'http://www.annecy.org/home', '예', 0),
+('칸 국제영화제', 'Cannes Film Festival', '유럽', '프랑스', '칸', 'http://www.festival-cannes.com', '예', 0),
+('선댄스 영화제', 'Sundance Film Festival', '북미주', '미국', '솔트레이크시티', 'http://www.sundance.org/festival', '예', 0),
+('카를로비 바리 국제영화제', 'Karlovy Vary International Film Festival', '유럽', '체코', '카를로비 바리', 'http://www.kviff.com', '예', 0),
+('마르델플라타 국제영화제', 'Mar del Plata International Film Festival', '중남미', '아르헨티나', '마르델플라타', 'http://www.mardelplatafilmfest.com', '예', 0),
+('전주국제영화제', 'Jeonju International Film Festival : JIFF', '아시아', '한국', '전주', 'http://www.jiff.or.kr', '예', 0),
+('베니스 국제영화제', 'Venice International Film Festival', '유럽', '이탈리아', '베니스', 'http://www.labiennale.org/en/cinema', '예', 0),
+('로카르노 국제영화제', 'Locarno International Film Festival', '유럽', '스위스', '로카르노', 'http://www.pardo.ch', '예', 0),
+('도쿄 국제영화제', 'Tokyo International Film Festival', '아시아', '일본', '도쿄', 'http://www.tiff-jp.net/', '예', 1),
+('크레떼이유 국제여성영화제', 'International Women film festival of Creteil', '유럽', '프랑스', '크레떼이유', 'http://www.filmsdefemmes.com', '예', 0),
+('가톨릭영화제', 'Catholic Film Festival', '아시아', '한국', '서울', 'http://www.caff.kr', '아니오', 1),
+('충주단편영화제', 'Chungju Short Film Festival', '아시아', '한국', '충주', 'http://cafe.daum.net/cj-shortfl.daum.net', '아니오', 0),
+('서울국제실험영화페스티벌', 'Experimental Film &amp; Video Festival in Seoul : EXiS', '아시아', '한국', '서울', 'http://www.ex-is.org', '아니오', 0),
+('부천국제애니메이션페스티벌', 'Bucheon International Animation Festival : BIAF', '아시아', '한국', '부천', 'http://www.biaf.or.kr', '아니오', 0),
+('제주여성영화제', 'Jeju Women\'s Film Festival', '아시아', '한국', '제주', 'http://jejuwomen.tistory.com', '아니오', 0),
+('한국영화평론가협회상', 'The Korean Association of Film Critics Awards', '아시아', '한국', '서울', 'http://fca.kr/', '아니오', 0),
+('강정국제평화영화제', 'International PEACE Film Festival in GANGJEONG', '아시아', '한국', '제주도 서귀포', '', '아니오', 1),
+('DMZ국제다큐멘터리영화제', 'DMZ International Documentary Film Festival', '아시아', '한국', '고양', 'http://www.dmzdocs.com', '아니오', 3),
+('전주국제단편영화제', 'Jeonju International Short Film Festival: JISFF', '아시아', '한국', '전주', 'http://www.jisff.kr', '아니오', 0),
+('들꽃영화상', 'Wildflower Film Awards Korea', '아시아', '한국', '서울', 'http://www.wildflower-awards.com/', '아니오', 0),
+('전북가족영화제', 'Jeonbuk Family Film Festival', '아시아', '한국', '전주', 'http://www.jfff.or.kr', '아니오', 0),
+('서울국제여성영화제', 'Seoul International Women’s Film Festival : SIWFF', '아시아', '한국', '서울', 'http://www.siwff.or.kr', '아니오', 0),
+('EBS 국제다큐영화제', 'EBS International Documentary Film Festival : EIDF', '아시아', '한국', '서울', 'http://www.eidf.co.kr/kor', '아니오', 2),
+('제천국제음악영화제', 'Jecheon International Music & Film Festival : JIMFF', '아시아', '한국', '제천', 'http://www.jimff.org', '아니오', 0),
+('정동진독립영화제', 'Jeongdongjin Independent Film Festival : JIFF', '아시아', '한국', '강릉', 'http://jiff.kr/', '아니오', 0),
+('전북독립영화제', 'Jeonbuk Independent Film Festival', '아시아', '한국', '전주', 'http://www.jifa.or.kr/', '아니오', 0),
+('광화문국제단편영화제', 'GwangHwaMun International Short Film Festival : GISFF', '아시아', '한국', '서울', 'http://www.gisff.kr/', '아니오', 0),
+('대종상영화제', 'DAEJONG FILM AWARDS', '아시아', '한국', '서울', '', '아니오', 0),
+('울산단편영화제', 'Ulsan Short Film Festival: USFF', '아시아', '한국', '', 'http://uisff.com/', '아니오', 0),
+('부산국제어린이청소년영화제', 'Busan International Kids & Youth Film Festival : BIKY', '아시아', '한국', '부산', 'http://www.biky.or.kr', '아니오', 0),
+('대한민국청소년영화제', 'Korea Youth Film Festival, INTYFF', '아시아', '한국', '대전', 'http://intyca.com/', '아니오', 0),
+('리치몬드국제영화제', '', '아시아', '한국', '', '', '아니오', 0),
+('파이브플레이버스아시아', 'Five Flavours Asian Film Festival', '아시아', '한국', '', 'http://https://www.piecsmakow.pl/index.do', '아니오', 0),
+('이흘라바 다큐', 'Ji.hlava International Documentary Film Festival', '아시아', '한국', '', 'http://https://www.ji-hlava.com/', '아니오', 0),
+('이흘라바 다큐', 'Ji.hlava International Documentary Film Festival', '아시아', '한국', '', 'http://https://www.ji-hlava.com/', '아니오', 0),
+('셰필드 호러', 'Celluloid Screams: Shefcontinent Horror Film Festival', '아시아', '한국', '', 'http://https://www.celluloidscreams.com/', '아니오', 0),
+('키츠뷔엘', 'Filmfestival Kitzbuehel', '아시아', '한국', '', 'http://https://ffkb.at/', '아니오', 0),
+('독빌 다큐', 'DOCVILLE International Documentary Film Festival', '아시아', '한국', '', '', '아니오', 0),
+('룩셈부르크 시티', 'Luxembourg City Film Festival', '아시아', '한국', '', 'http://https://www.docville.be/en', '아니오', 1),
+('애드먼턴', 'Edmonton International Film Festival', '아시아', '한국', '', 'http://https://edmontonfilmfest.com/', '아니오', 0),
+('KF세계영화주간', 'KF World Cinema Week', '아시아', '한국', '서울', 'http://kfworldcinemaweek.or.kr', '아니오', 1),
+('서울남아시아영화제', 'International Film Festival of South Asia-Seoul: IFFSA-Seoul', '아시아', '한국', '서울', 'http://iffsa.kr/', '아니오', 0),
+('서울노인영화제', 'Seoul International Senior Film Festival : SISFF', '아시아', '한국', '서울', 'http://sisff.seoulnoin.or.kr', '아니오', 0),
+('목포국도1호선독립영화제', 'Mokpo national Road 1 Independent Film Festival: NR1IFF', '아시아', '한국', '목포', 'http://www.facebook.com/nr1iff', '아니오', 0),
+('강원영화제: 햇시네마 페스티벌', 'HAT Cinema Festival', '아시아', '한국', '', 'http://www.gwfilm.kr', '아니오', 0),
+('평창국제평화영화제', 'PyeongChang International Peace Film Festival', '아시아', '한국', '평창', 'http://pipff.org', '아니오', 0),
+('글래스고 영화제', 'Glasgow Film Festival', '아시아', '한국', '', 'http://glasgowfilm.org/glasgow-film-festival', '아니오', 0),
+('충무로영화제-디렉터스 위크', 'Chungmuro Film Festival-directors Week', '아시아', '한국', '서울', 'http://https://thecmr.kr/', '아니오', 0),
+('무중력영화제', 'MUjungryuck Film Festival: MUFF', '아시아', '한국', '서울', 'http://www.instagram.com/youthzone_muff/', '아니오', 0),
+('서울영등포국제초단편영화제', 'Seoul Yeongdeungpo International Extreme-Short Image & Film Festival: SESIFF', '아시아', '한국', '서울', 'http://www.sesiff.org', '아니오', 0),
+('서울독립영화제', 'Seoul Independent Film Festival : SIFF', '아시아', '한국', '서울', 'http://www.siff.kr/', '아니오', 0),
+('서울국제음식영화제', 'Seoul International Food Film Festival', '아시아', '한국', '서울', 'http://www.sifff.kr/', '아니오', 0),
+('성북청춘불패영화제', 'Seongbuk Film Festival', '아시아', '한국', '서울', 'http://www.sbff.co.kr/', '아니오', 0),
+('충무로단편영화제', 'Chungmuro Short Film Festival', '아시아', '한국', '서울', 'http://blog.naver.com/moonok0784', '아니오', 0),
+('서울국제환경영화제', 'Seoul International Eco Film Festival : SIEFF', '아시아', '한국', '서울', 'http://sieff.kr/', '아니오', 0),
+('충북국제무예액션영화제', 'Chungbuk International Martial Arts & Action Film Festival : CIMAFF', '아시아', '한국', '청주', 'http://cimaff.kr/', '아니오', 0),
+('청주국제단편영화제', 'Cheongju International Short Film Festival : CISFF', '아시아', '한국', '청주', 'http://cjiff.co.kr', '아니오', 0),
+('서울국제어린이영화제', 'Seoul International Children\'s Film Festival: SICFF', '아시아', '한국', '서울', 'http://www.sicff.kr', '아니오', 0),
+('디아스포라영화제', 'Diaspora Film Festival : DIAFF', '아시아', '한국', '인천', 'http://www.diaff.org', '아니오', 0),
+('부산국제단편영화제', 'Busan International Short Film Festival : BISFF', '아시아', '한국', '부산', 'http://www.bisff.org/', '아니오', 0),
+('울주세계산악영화제', 'Ulju Mountain Film Festival : UMFF', '아시아', '한국', '울주', 'http://www.umff.kr/', '아니오', 0),
+('서울인디애니페스트', 'Seoul Indie-AniFest: Korean Independent Animation Film Festival', '아시아', '한국', '서울', 'http://www.ianifest.org', '아니오', 0),
+('한국퀴어영화제', 'Korea Queer Film Festival : KQFF', '아시아', '한국', '서울', 'http://kqff.co.kr/', '아니오', 0),
+('대전독립영화제', 'Daejeon Independent Film&Video Festival : DIFV', '아시아', '한국', '대전', 'http://www.difv.co.kr', '아니오', 0),
+('대한민국청소년미디어대전', 'Korea Youth Media Festival : KYMF', '아시아', '한국', '서울', 'http://kymf.ssro.net/', '아니오', 0),
+('상록수다문화국제단편영화제', 'Evergreen Multi-culture International Short Film Festival', '아시아', '한국', '안산', 'http://www.evff.co.kr', '아니오', 0),
+('울산국제영화제', 'Ulsan International Film Festival: UIFF', '아시아', '한국', '울산', 'http://www.ulsan.go.kr/uiff', '아니오', 0),
+('한국청소년영화제', 'Korea Youth Film Festival: KYFF', '아시아', '한국', '광주광역시', 'http://cafe.daum.net/KYFF.macji', '아니오', 0),
+('청룡영화상', 'The Blue Dragon Awards', '아시아', '한국', '서울', 'http://www.blueaward.co.kr/awards/', '아니오', 0),
+('KYFF단편영화제', 'Kookmin Youth Film Festival', '아시아', '한국', '', 'http://www.instagram.com/kyff_2021/', '아니오', 0),
+('강릉국제영화제', 'Gangneung International Film Festival', '아시아', '한국', '강릉', 'http://www.giff.kr/', '아니오', 3),
+('대청호가 그린 영화제', '', '아시아', '한국', '', '', '아니오', 0),
+('제1회 건넛마을 영화제', '', '아시아', '한국', '', '', '아니오', 0),
+('여성인권영화제', 'Film Festival for Women\'s Rights : FIWOM', '아시아', '한국', '서울', 'http://www.fiwom.org', '아니오', 0),
+('황금촬영상 시상식', 'Korea Gold Awards Festival', '아시아', '한국', '가평', 'http://kgoldaward.com/', '아니오', 0),
+('부산독립영화제', 'Independent Film Festival BUSAN', '아시아', '한국', '부산', 'http://indiebusan.modoo.at/', '아니오', 0),
+('제주영화제', 'Jeju Film Festival', '아시아', '한국', '제주', 'http://www.jejuff.kr/', '아니오', 0),
+('인천독립영화제 : inFilm', 'Incheon Independent Film Festival', '아시아', '한국', '인천', 'http://cafe.daum.net/in-film', '아니오', 0),
+('도시영화제', '', '아시아', '한국', '', 'http://blog.naver.com/urban_filmfestival', '아니오', 1),
+('상록수디지로그월드영화제', '', '아시아', '한국', '', '', '아니오', 0),
+('KTV 국민영상제', '', '아시아', '한국', '', '', '아니오', 1),
+('헤이리시네마 국제단편영화제', '', '아시아', '한국', '', '', '아니오', 0),
+('인천인권영화제', 'Incheon Human Rights Film Festival', '아시아', '한국', '인천', 'http://www.inhuriff.org', '아니오', 0),
+('꽃심어린이청소년영화제', '', '아시아', '한국', '', '', '아니오', 1),
+('천안춤영화제', 'CheonAn Dance Film Festival : CADFF', '아시아', '한국', '천안', 'http://www.cadff.kr', '아니오', 0),
+('금천패션영화제', '', '아시아', '한국', '', '', '아니오', 0),
+('원주여성영화제', '', '아시아', '한국', '', '', '아니오', 0),
+('우리나라 가장 동쪽 영화제', '', '아시아', '한국', '', '', '아니오', 0),
+('시네광주1980 온라인 영화제', '', '아시아', '한국', '', 'http://cineg1980.kr', '아니오', 0),
+('김포국제청소년영화제', 'Gimpo International Youth Film Festival : GIYFF', '아시아', '한국', '김포', 'http://www.gimpoyff.com/', '아니오', 1),
+('광주독립영화제', 'Gwangju Independent Film Festival', '아시아', '한국', '광주', 'http://gift4u.or.kr/', '아니오', 1);
 
 insert into genre(genre_name) values('SF');
 insert into genre(genre_name) values('애니메이션');
@@ -600,7 +601,10 @@ insert into category(genre_id, movie_id) values(13, 200);
 insert into user(email, password, nickname) values
 ('dev.siyeon@gmail.com', '$2y$10$eCIywz7MlL7t6MTStUvfy.piq17dBxNP7xOqBLQ1qzTt/TnrymEIi', '시연'),
 ('fubies@naver.com', '$2y$10$tcaBHzh9IUXdY7b8vfOZoeoxAdGE1jygXVTzXmHStZ5qC0Crg1wde', '퍼비'),
-('team01@ewhain.net', '$2y$10$JX.sYKGIkeCWJu/wKORyF.DpVRXF0rwctI.a5/XLwWsuvJepJHX9C', '빅데응');
+('team01@ewhain.net', '$2y$10$JX.sYKGIkeCWJu/wKORyF.DpVRXF0rwctI.a5/XLwWsuvJepJHX9C', '빅데응'),
+('nitro1886@gmail.com', '$2y$10$E24rm2Q4VluEWQyRCkAr.OaofGYHmhwjBIyip//yrmETJ2i5q5yam', '니트'),
+('fubies1886@gmail.com', '$2y$10$KKsEMk7B/lJE9mePMAk63OhiTLW610.D4I5sSg7qTN1BoPudtViFe', '퍼비비'),
+('nitro@gmail.com', '$2y$10$LV2pykfJbJFmn/D6A5IwWOGFnWz4suRYJrDMZ7v7gyxBtbLr7dd2G', '밍지');
 
 INSERT INTO `good` (`user_id`, `movie_id`) VALUES
 (1, 1),
@@ -626,3 +630,36 @@ INSERT INTO `bad` (`user_id`, `movie_id`) VALUES
 (2, 153),
 (3, 58),
 (3, 90);
+
+
+INSERT INTO `interest` (`user_id`, `festival_id`) VALUES
+(4, 32),
+(4, 80),
+(4, 20),
+(4, 93),
+(4, 99),
+(4, 88),
+(4, 27),
+(4, 90),
+(4, 48),
+(4, 18),
+(5, 27),
+(5, 50),
+(5, 32),
+(5, 80),
+(5, 26),
+(5, 100),
+(6, 27),
+(6, 80);
+
+INSERT INTO `post` (`user_id`, `festival_id`, `title`, `content`, `created_date`, `modified_date`, `comment_cnt`) VALUES
+(4, 32, '17일에 같이 가실 분 구해요!', '10시에 얼리버드 입장하실 분 구합니다~', '2022-11-16 09:23:30', '2022-11-16 09:23:30', 0),
+(4, 80, '16일에 같이 가실 여성 분 구해요!', '같이 가서 영화제 즐기고 옵시당', '2022-11-16 09:24:50', '2022-11-16 09:24:50', 2),
+(4, 79, '18일에 같이 가실 20대 구해요!', '제가 20대라서 20대로 구해봅니다ㅎㅎ같이 영화 얘기해요!', '2022-11-16 09:25:47', '2022-11-16 09:25:47', 0),
+(5, 32, '17일에 같이 가실 분? 표 2장 생겨서 구해요~', '무료 입장하고 싶으신 분 연락주세요! ', '2022-11-16 09:27:01', '2022-11-16 09:27:01', 0),
+(5, 27, '17일에 같이 가실 분??', '영화제 처음인데 같이 즐기고 오실 분 구해욥!', '2022-11-16 09:27:50', '2022-11-16 09:27:50', 1);
+
+INSERT INTO `comment` (`post_id`, `user_id`, `content`) VALUES
+(2, 5, '저 가고 싶습니다!'),
+(5, 6, '저요! 저도 영화제 처음이라 같이 가고 싶습니다'),
+(2, 6, '저도 가고 싶습니다!!');
