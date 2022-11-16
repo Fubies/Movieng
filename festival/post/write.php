@@ -3,7 +3,7 @@ session_start();
 
 $festival_id = $_POST['festival_id']; 
 
-$mysqli = mysqli_connect("localhost", "root", "", "team01", "3306");
+$mysqli = mysqli_connect("localhost", "team01", "team01", "team01", "3307");
 
 echo "<script>console.log('consoletest : $festival_id');</script>";
 

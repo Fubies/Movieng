@@ -1,6 +1,6 @@
 <?php
 session_start();
-$mysqli = mysqli_connect("localhost", "team01", "team01", "team01");
+$mysqli = mysqli_connect("localhost", "team01", "team01", "team01", "3307");
 
 
 if(mysqli_connect_errno()) {

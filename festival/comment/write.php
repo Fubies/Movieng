@@ -2,7 +2,7 @@
 session_start();
 
 $post_id = $_POST['post_id']; 
-$mysqli = mysqli_connect("localhost", "team01", "team01", "team01");
+$mysqli = mysqli_connect("localhost", "team01", "team01", "team01", "3307");
 
 echo "<script>console.log('consoletest : $post_id');</script>";
 
