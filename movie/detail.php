@@ -75,17 +75,21 @@ else {
               </div>
               <br>
               <div class="review_list_container">
-                <div class="review_title"> <a href="./review/write.html?movie=<?php echo $id ?>">리뷰 작성하기</a></div>
+                <div class="review_button"> <a href="./review/write.html?movie=<?php echo $id ?>">리뷰 작성하기</a></div>
                 <?php if($res) {
                   while($newArray = mysqli_fetch_array($res2, MYSQLI_ASSOC)) { ?>
                     <div class="review_container">
-                      <span class="user"><?php $user = $newArray['user_id']; 
+                      <div class="review_title">
+                        <span class="user"><h3><?php $user = $newArray['user_id']; 
                         $sql3 = "select nickname from user where user_id = '".$user."'";
                         $res3 = mysqli_query($mysqli, $sql3);
                         $newArray3 = mysqli_fetch_array($res3, MYSQLI_ASSOC);
-                        echo $newArray3['nickname']; ?></span>
-                      <span class="text"><?php echo $newArray['content'] ?></span>
-                      <span class="score"><?php echo $newArray['score']?></span>
+                        echo $newArray3['nickname']; ?></h3></span>
+                        <span class="link"><h3> - </h3></span>
+                        <span class="score"><h3><?php echo $newArray['score']?>점</h3></span>
+                      </div>
+                      <br>
+                      <span class="text"><?php echo $newArray['content'] ?></span><br>
                       <button class="delete_button" onclick="location.href='./review.php?movie=<?=$id?>&review=<?=$newArray['review_id']?>';">
                         삭제                    
                       </button>
